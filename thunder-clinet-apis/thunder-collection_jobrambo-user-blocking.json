@@ -1,0 +1,57 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "jobrambo-user-blocking",
+    "collectionId": "6a988cd9-1095-4abc-86cd-905a51da5ad6",
+    "dateExported": "2024-09-08T14:18:33.827Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "9da8c628-845c-49e4-bee3-f1521789a0fa",
+            "colId": "6a988cd9-1095-4abc-86cd-905a51da5ad6",
+            "containerId": "",
+            "name": "admin-login",
+            "url": "http://localhost:5000/api/v1/auth/login",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-09-08T14:16:43.190Z",
+            "modified": "2024-09-08T14:17:00.226Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"userInfo\": {\n    \"email\": \"\",\n    \"password\": \"\"\n  }\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "c6495363-9f3e-4404-b1cf-d2b6584a8c3c",
+            "colId": "6a988cd9-1095-4abc-86cd-905a51da5ad6",
+            "containerId": "",
+            "name": "admin-logout",
+            "url": "http://localhost:5000/api/v1/auth/logout",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-09-08T14:17:39.775Z",
+            "modified": "2024-09-08T14:17:39.775Z",
+            "headers": []
+        },
+        {
+            "_id": "e11a5575-f1eb-4c77-bbb3-ad8b922ddd95",
+            "colId": "6a988cd9-1095-4abc-86cd-905a51da5ad6",
+            "containerId": "",
+            "name": "block-unblock-user",
+            "url": "http://localhost:5000/api/v1/user/block",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-09-08T14:18:18.424Z",
+            "modified": "2024-09-08T14:18:27.292Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"userid\": \"\",\n  \"block\": false\n}",
+                "form": []
+            }
+        }
+    ],
+    "ref": "C8DU9sx9o5uAX8JQTijjTqySq7Erm_E9vwGweqeS98WfvqMiRjMuo7uXSf2eGXK9KFdr72EA8XOk6i5_Z0yruA"
+}

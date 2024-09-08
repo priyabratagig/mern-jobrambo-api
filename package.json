@@ -1,0 +1,25 @@
+{
+  "name": "jobrambo-api",
+  "version": "1.0.0",
+  "description": "jobrambo backend api catering all api and webpage request",
+  "main": "index.cjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "set NODE_ENV=development&& nodemon --env-file=.env index.cjs",
+    "prod": "set NODE_ENV=production&& nodemon --env-file=.env index.cjs"
+  },
+  "author": "Priyabrata",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.2.0",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.5.4",
+    "mongoose-validation-error-transform": "^0.0.6"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
