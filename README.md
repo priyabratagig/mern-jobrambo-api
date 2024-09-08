@@ -1,6 +1,6 @@
 # JobRambo
 
-> Better naming conventions, better-layed modules, separation of operations
+> Better naming conventions, better-layered architecture, separation of operations
 > 
 
 > Better security guidelines, json webtoken with live access authorization, http-only token, encrypted and https only cookie
