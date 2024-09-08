@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+# include dist folders under static/
+!statics/**/dist
+
 #.env
 .env
 
