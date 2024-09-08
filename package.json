@@ -5,8 +5,8 @@
   "main": "index.cjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "set NODE_ENV=development&& nodemon --env-file=.env index.cjs",
-    "prod": "set NODE_ENV=production&& node --env-file=.env index.cjs"
+    "dev": "set NODE_ENV=development&& nodemon index.cjs",
+    "prod": "set NODE_ENV=production&& node index.cjs"
   },
   "author": "Priyabrata",
   "license": "ISC",
