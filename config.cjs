@@ -2,7 +2,7 @@ const DEV = process.env.NODE_ENV === 'development'
 const PROD = process.env.NODE_ENV === 'production'
 
 const SEVER_IP = process.env.IP
-const SERVER_PORT = parseInt(process.env.SERVER_PORT, 10)
+const SERVER_PORT = parseInt(process.env.PORT, 10)
 const ALLOWED_ORIGIN = process.env.ALLOWED_ORIGIN
 
 const MONGODB_INSTANCE_LOCAL = process.env.MONGODB_INSTANCE === 'local'
