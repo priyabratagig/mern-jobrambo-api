@@ -5,6 +5,7 @@ const mongoose = require('mongoose')
 const cors = require('cors')
 const cookie_parser = require('cookie-parser')
 const path = require('path')
+const os = require('os')
 const mongooseValidationErrorTransform = require('mongoose-validation-error-transform')
 
 const authentication = require('./middlewares/auth.midlleware.cjs')
@@ -68,10 +69,21 @@ try {
             console.log(`public: http://${SEVER_IP}:${SERVER_PORT}`)
         }
         else {
+            let ip_address = '127.0.0.1'
+            const interfaces = os.networkInterfaces()
+            for (const interfaceName in interfaces) {
+                const iface = interfaces[interfaceName]
+                for (const alias of iface) {
+                    if (alias.family === 'IPv4' && !alias.internal) {
+                        ip_address = alias.address
+                        break
+                    }
+                }
+            } 
             console.log('Server is running in production mode')
             console.log(`Server is running on port ${SERVER_PORT}`)
             console.log(`local: http://localhost:${SERVER_PORT}/`)
-            console.log(`public: http://${SEVER_IP}:${SERVER_PORT}`)
+            console.log(`public: http://${ip_address}:${SERVER_PORT}`)
         }
     })
 } catch (err) {
