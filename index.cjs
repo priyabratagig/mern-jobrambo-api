@@ -71,12 +71,13 @@ try {
         else {
             let ip_address = '127.0.0.1'
             const interfaces = os.networkInterfaces()
+            loop:
             for (const interfaceName in interfaces) {
                 const iface = interfaces[interfaceName]
                 for (const alias of iface) {
                     if (alias.family === 'IPv4' && !alias.internal) {
                         ip_address = alias.address
-                        break
+                        break loop;
                     }
                 }
             } 
